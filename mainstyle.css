@@ -1,0 +1,9 @@
+
+.nav-list li:first-child{
+    background-color: white ;
+    scale: 1.1;
+}
+
+.nav-list li:first-child a, .nav-list li:first-child i  {
+    color:var(--navBg);
+}

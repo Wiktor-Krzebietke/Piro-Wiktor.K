@@ -1,0 +1,11 @@
+.nav-list li:nth-child(2){
+    background-color: white ;
+    scale: 1.1;
+}
+
+.nav-list li:nth-child(2) a, .nav-list li:nth-child(2) i  {
+    color:var(--navBg);
+}
+
+
+
