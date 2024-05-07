@@ -1,3 +1,20 @@
+body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(70,70,70);
+    background-size: cover;
+
+    z-index: 0;
+    top: 50px;
+}
+
+header{
+    z-index: 20;
+}
+
 .nav-list li:nth-child(5){
     background-color: white ;
     scale: 1.1;
@@ -6,6 +23,134 @@
 .nav-list li:nth-child(5) a, .nav-list li:nth-child(5) i  {
     color:var(--navBg);
 }
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    position: relative;
+
+    align-items: center;
+    height: 900px;
+    width: 900px;
+    padding: 40px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+   
+    background-color: white;
+    
+    border-radius: 50px;
+
+    box-shadow: 4px 3px 100px 2px rgb(192, 192, 192);
+
+    z-index: 1;
+
+    overflow: hidden;
+}
+
+.contacts::before{
+    content: '';
+    background: rgba(95, 95, 95, 0.664);
+    width: 1600px;
+    height: 350px;
+    position: absolute;
+    z-index: -2;
+    rotate: 45deg;
+
+    animation: border-effect 4s linear infinite;
+}
+
+@keyframes border-effect{
+    0%{
+        rotate: 0deg;
+    }
+    100%{rotate:360deg;}
+}
+
+
+.contacts::after{
+    position: absolute;
+    content: '';
+    background-color: white;
+    inset: 6px;
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 80px;
+
+}
+
+
+
+.info h2{
+    margin-bottom: 20px;
+    font-size: clamp(10px, 4vh, 40px);
+}
+
+.info p{
+    margin: 10px;
+    font-size: clamp(10px, 3vh, 30px);
+}
+
+.info a, .copy_link{
+    text-decoration: none;
+    padding: 15px;
+    font-size: clamp(10px, 4vh, 20px);
+    background-color:rgb(70,70,70);
+    color: white;
+
+    border: 2px solid rgb(41, 41, 41);
+    border-radius: 30px;
+
+    
+}
+
+.info a{
+    animation: a-animate 2s infinite;
+}
+@keyframes a-animate{
+    0%{scale: 1.0;}
+    50%{scale:1.1}
+    100%{scale: 1.0;}
+}
+
+.copy_link{
+    animation: btn-animate 2s infinite;
+}
+@keyframes btn-animate{
+    0%{scale: 1.1;}
+    50%{scale:1.0}
+    100%{scale: 1.1;}
+}
+
+
+
+
+
+h1{
+    font-size: clamp(15px ,5vh, 40px);
+}
+
+.contact-effect{
+    height: 920px;
+    width: 920px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+   
+    position: relative;
+    display: flex;
+    margin: 100px;
+} 
 
 
 
