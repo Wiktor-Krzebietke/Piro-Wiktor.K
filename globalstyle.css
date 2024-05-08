@@ -201,7 +201,6 @@ transform: translateY(-100px);
         align-items: center;
         justify-content: space-evenly;
         
-
         top: 50px;
         width: 50%;
         height: 100vh;
@@ -210,10 +209,9 @@ transform: translateY(-100px);
 
         background-color: #272727f3;
         
-
         transition: .2s ease-in-out;
 
-
+        border-bottom-right-radius: 20px;
 
 
     }
