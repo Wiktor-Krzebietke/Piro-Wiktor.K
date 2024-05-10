@@ -182,3 +182,20 @@ h1{
     opacity: 0;
     position:absolute;
 }
+
+
+@media only screen and (max-width:767px) {
+
+contacts{
+width:550px;
+height:550px;
+padding:30px;
+}
+
+contact-frame{
+width:555px;
+height:555px;
+margin: 50px;
+padding:50px;
+}
+}
